@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "remote:desktop": "bash scripts/start-remote-desktop.sh",
-    "nemlig:login": "tsx scripts/login.ts",
-    "nemlig:search": "tsx scripts/search.ts",
+    "nemlig:login": "DISPLAY=:99 tsx scripts/login.ts",
+    "nemlig:search": "DISPLAY=:99 tsx scripts/search.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
